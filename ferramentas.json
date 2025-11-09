@@ -1,0 +1,665 @@
+[
+  {
+    "id": "AvidNote",
+    "nome": "AvidNote",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Ferramenta para organizar notas de pesquisa e anotações bibliográficas.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$7/mês).",
+      "studentPlan": "Desconto de 50%.",
+      "review": "\"Ajuda a conectar minhas notas de leitura e a encontrar temas entre os artigos que li. Bom para a fase de 'síntese'.\" - Mestranda, Filosofia.",
+      "link": "https://avidnote.com/"
+    }
+  },
+  {
+    "id": "Chatdoc",
+    "nome": "Chatdoc",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Permite \"conversar\" com documentos PDF, extraindo informações e resumos.",
+    "detalhes": {
+      "pricing": "Freemium (Créditos gratuitos).",
+      "studentPlan": "Não.",
+      "review": "\"Concorrente do ChatPDF. Bom para interrogar PDFs. A capacidade de selecionar áreas do PDF para perguntar é um diferencial.\" - Doutorando, Direito.",
+      "link": "https://chatdoc.com/"
+    }
+  },
+  {
+    "id": "ChatPDF",
+    "nome": "ChatPDF",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Similar ao Chatdoc, focado em interagir com arquivos PDF via chat.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado).",
+      "studentPlan": "Não.",
+      "review": "\"O mais simples e rápido para 'conversar' com um PDF. Faço o upload e pergunto: 'Qual a metodologia deste artigo?'. Resposta imediata.\" - Mestranda, UNICAMP.",
+      "link": "https://www.chatpdf.com/"
+    }
+  },
+  {
+    "id": "ChatGPT",
+    "nome": "ChatGPT",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "LLM generalista da OpenAI. Ideal para brainstorming, redação assistida e tradução.",
+    "detalhes": {
+      "pricing": "Freemium (GPT-3.5 grátis, GPT-4 pago ~$20/mês).",
+      "studentPlan": "Não, mas a versão gratuita é robusta.",
+      "review": "\"O padrão para brainstorming e rascunho. A versão paga (GPT-4) é essencial para tarefas complexas.\" - Doutorando, USP.",
+      "link": "https://chatgpt.com/"
+    }
+  },
+  {
+    "id": "Claude",
+    "nome": "Claude",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "LLM da Anthropic, conhecido por sua grande janela de contexto e tom de escrita natural.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado, Pro ~$20/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Excelente para lidar com textos longos (PDFs) e para uma escrita mais 'natural' e menos 'robótica' que o ChatGPT.\" - Mestranda, UNICAMP.",
+      "link": "https://claude.ai/"
+    }
+  },
+  {
+    "id": "Code Llama",
+    "nome": "Code Llama",
+    "categoria": ["programacao"],
+    "emojis": "💻",
+    "descricao": "Modelo da Meta (Llama) focado em código, para autocompletar e gerar scripts.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito para uso local).",
+      "studentPlan": "N/A (requer hardware).",
+      "review": "\"Ótimo para rodar localmente (via Ollama) e garantir que o código da minha pesquisa não vaze.\" - Doutorando, USP.",
+      "link": "https://www.llama.com/code-llama/"
+    }
+  },
+  {
+    "id": "Codestral",
+    "nome": "Codestral",
+    "categoria": ["programacao"],
+    "emojis": "💻",
+    "descricao": "Modelo da Mistral AI especializado em geração, correção e explicação de código.",
+    "detalhes": {
+      "pricing": "API Paga (Preço por token).",
+      "studentPlan": "Não.",
+      "review": "\"Especializado em código. Mais preciso que o GPT-4 para Python e R, especialmente para 'refatorar' scripts complexos.\" - Aluno de C. de Dados, FGV.",
+      "link": "https://mistral.ai/news/codestral/"
+    }
+  },
+  {
+    "id": "Connected Papers",
+    "nome": "Connected Papers",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Cria mapas visuais de redes de citação, mostrando artigos seminais e relacionados.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado, ~$6/mês).",
+      "studentPlan": "Gratuito para trabalhos acadêmicos (requer solicitação).",
+      "review": "\"Essencial para a revisão de literatura. Jogo um artigo seminal e ele cria o mapa visual de quem o citou e quem ele citou. Encontro artigos que o Google Scholar não mostra.\" - Doutorando, USP.",
+      "link": "https://www.connectedpapers.com/"
+    }
+  },
+  {
+    "id": "Consensus",
+    "nome": "Consensus",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Motor de busca que responde perguntas com \"sim/não\" ou \"talvez\", com base em evidências científicas.",
+    "detalhes": {
+      "pricing": "Freemium (Créditos gratuitos, Pro ~$7/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Responde perguntas com 'Sim/Não/Talvez' baseado em evidências. Ótimo para 'triar' um tópico e ver o consenso científico rapidamente.\" - Mestranda, Medicina.",
+      "link": "https://consensus.app/"
+    }
+  },
+  {
+    "id": "Copilot",
+    "nome": "Copilot",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "LLM da Microsoft, integrado ao Windows e ao Bing, com forte capacidade de busca na web.",
+    "detalhes": {
+      "pricing": "Gratuito (integrado ao Windows/Edge) ou Pro (~$20/mês).",
+      "studentPlan": "Gratuito com e-mail .edu (para Github Copilot).",
+      "review": "\"Melhor que o ChatGPT para buscas com fontes atuais, pois usa o Bing. Ótimo para 'achar' artigos recentes.\" - Pesquisador, EMBRAPA.",
+      "link": "https://copilot.microsoft.com/"
+    }
+  },
+  {
+    "id": "Cursor",
+    "nome": "Cursor",
+    "categoria": ["programacao"],
+    "emojis": "💻",
+    "descricao": "Um editor de código (IDE) \"AI-first\" projetado para programação em par com IA.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado, Pro ~$20/mês).",
+      "studentPlan": "Desconto de 50% para estudantes.",
+      "review": "\"É um editor de código (VS Code 'tunado') que 'pensa' em IA. Ele entende todo o meu projeto, não só o arquivo atual. Revolucionário.\" - Doutorando, C. da Computação.",
+      "link": "https://www.trycursor.com/"
+    }
+  },
+  {
+    "id": "Dall-e",
+    "nome": "Dall-e",
+    "categoria": ["imagem"],
+    "emojis": "🖼️",
+    "descricao": "Modelo de geração de imagem da OpenAI, integrado ao ChatGPT e Copilot.",
+    "detalhes": {
+      "pricing": "Integrado no ChatGPT Plus (~$20/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Ótimo para criar figuras conceituais e esquemas rápidos para apresentações. A integração com o chat facilita refinar a imagem.\" - Mestranda, UNESP.",
+      "link": "https://openai.com/index/dall-e-3/"
+    }
+  },
+  {
+    "id": "Data Squirrel",
+    "nome": "Data Squirrel",
+    "categoria": ["analise"],
+    "emojis": "📊",
+    "descricao": "Ferramenta de análise de dados via chat, permitindo explorar datasets com linguagem natural.",
+    "detalhes": {
+      "pricing": "Freemium.",
+      "studentPlan": "N/A.",
+      "review": "\"Bom para análises rápidas de CSVs. Faço perguntas em linguagem natural ('qual a correlação entre X e Y?') e ele gera os gráficos.\" - Mestranda, Sociologia.",
+      "link": "https://datasquirrel.ai/"
+    }
+  },
+  {
+    "id": "Elicit",
+    "nome": "Elicit",
+    "categoria": ["busca", "llm", "analise", "escrita"],
+    "emojis": "🔎 🧠 📊 ✍️",
+    "descricao": "Revisão sistemática assistida, extraindo dados de artigos em tabelas.",
+    "detalhes": {
+      "pricing": "Freemium (Créditos gratuitos, Pago ~$12/mês).",
+      "studentPlan": "Não.",
+      "review": "\"A melhor ferramenta para revisão sistemática. Ele 'lê' 100 artigos e extrai a metodologia, amostra e conclusões em uma tabela. Economiza semanas de trabalho.\" - Pós-Doutoranda, Saúde Coletiva.",
+      "link": "https://elicit.com/"
+    }
+  },
+  {
+    "id": "Explain Paper",
+    "nome": "Explain Paper",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Ajuda a entender artigos complexos permitindo que o usuário destaque e peça explicações.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado).",
+      "studentPlan": "Sim, oferece créditos extras para .edu.",
+      "review": "\"Salva-vidas para artigos de engenharia e C. da Computação. Eu destaco um parágrafo ou equação complexa e ele 'traduz' para linguagem simples.\" - Aluno, Engenharia.",
+      "link": "https://www.explainpaper.com/"
+    }
+  },
+  {
+    "id": "Gemini",
+    "nome": "Gemini",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "LLM do Google (antigo Bard), com forte integração ao ecossistema Google (Docs, Gmail, etc.).",
+    "detalhes": {
+      "pricing": "Freemium (1.5 Pro grátis, Advanced pago).",
+      "studentPlan": "Não.",
+      "review": "\"Integração com Google Docs e Scholar é o diferencial. Uso para organizar e resumir notas de leitura.\" - Doutoranda, UFRJ.",
+      "link": "https://gemini.google.com/"
+    }
+  },
+  {
+    "id": "Github Copilot",
+    "nome": "Github Copilot",
+    "categoria": ["programacao"],
+    "emojis": "💻",
+    "descricao": "Assistente de programação integrado a IDEs (como VS Code) para autocompletar código.",
+    "detalhes": {
+      "pricing": "Pago (~$10/mês) ou Gratuito para Estudantes.",
+      "studentPlan": "Gratuito para estudantes com e-mail .edu verificado.",
+      "review": "\"Indispensável. Não vivo sem. Aumenta minha produtividade em programação (Python/R) em pelo menos 50%.\" - Pesquisador, INPE.",
+      "link": "https://github.com/features/copilot"
+    }
+  },
+  {
+    "id": "Grammarly",
+    "nome": "Grammarly",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Assistente de escrita focado em gramática, clareza, concisão e tom (geral, não acadêmico).",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$12/mês).",
+      "studentPlan": "Instituições podem ter licenças (ex: CAPES).",
+      "review": "\"O corretor ortográfico e gramatical mais famoso. A versão paga (Pro) ajuda muito com a 'clareza' e 'tom' da escrita em inglês.\" - Doutoranda, Relações Internacionais.",
+      "link": "https://www.grammarly.com/"
+    }
+  },
+  {
+    "id": "Hugging Face",
+    "nome": "Hugging Face",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "Principal repositório de modelos de IA abertos, permitindo testar e baixar modelos diversos.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito para testar modelos).",
+      "studentPlan": "N/A.",
+      "review": "\"Não é uma ferramenta, é um repositório. Essencial para quem quer testar modelos abertos (Llama, Mistral) sem instalar nada.\" - Aluno de C. da Computação, USP.",
+      "link": "https://huggingface.co/"
+    }
+  },
+  {
+    "id": "Humata",
+    "nome": "Humata",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Permite interagir com múltiplos arquivos PDF simultaneamente, comparando e sintetizando.",
+    "detalhes": {
+      "pricing": "Freemium (Uso gratuito limitado).",
+      "studentPlan": "Não.",
+      "review": "\"O 'ChatPDF' com esteroides. Consigo carregar múltiplos artigos de uma vez e fazer perguntas comparativas entre eles.\" - Pesquisador, IEA-USP.",
+      "link": "https://www.humata.ai/"
+    }
+  },
+  {
+    "id": "Iris.ai",
+    "nome": "Iris.ai",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Ferramenta de busca e sumarização focada em literatura científica e patentes.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$20/mês).",
+      "studentPlan": "Desconto para estudantes.",
+      "review": "\"Focado em patentes e literatura científica. O 'mapa' de tópicos que ele gera é útil para entender um campo novo.\" - Pesquisador, Engenharia.",
+      "link": "https://iris.ai/"
+    }
+  },
+  {
+    "id": "Jenni.ai",
+    "nome": "Jenni.ai",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Assistente de escrita acadêmica que ajuda a gerar e autocompletar frases.",
+    "detalhes": {
+      "pricing": "Pago (~$20/mês).",
+      "studentPlan": "Descontos disponíveis.",
+      "review": "\"Assistente de 'autocompletar'. Eu escrevo metade da frase e ele sugere o resto, já com a citação. Perigoso se usado sem critério, mas agiliza o rascunho.\" - Doutorando, USP.",
+      "link": "https://jenni.ai/"
+    }
+  },
+  {
+    "id": "Julius.ai",
+    "nome": "Julius.ai",
+    "categoria": ["analise"],
+    "emojis": "📊",
+    "descricao": "Analista de dados via chat, capaz de realizar análises estatísticas e criar visualizações.",
+    "detalhes": {
+      "pricing": "Freemium (Créditos gratuitos, Pro ~$18/mês).",
+      "studentPlan": "Não.",
+      "review": "\"O melhor 'analista de dados' em chat que testei. Subo meu CSV, peço análises estatísticas e ele escreve o código Python e executa.\" - Pós-Doutorando, Economia.",
+      "link": "https://julius.ai/"
+    }
+  },
+  {
+    "id": "Keenious.com",
+    "nome": "Keenious.com",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Plugin que analisa seu texto e recomenda artigos relevantes com base no seu rascunho.",
+    "detalhes": {
+      "pricing": "Gratuito.",
+      "studentPlan": "Gratuito.",
+      "review": "\"Um plugin para Word/Google Docs que lê seu rascunho e sugere artigos relevantes. Muito bom para achar referências enquanto escrevo.\" - Doutorando, UFRJ.",
+      "link": "https://keenious.com/"
+    }
+  },
+  {
+    "id": "KNIME",
+    "nome": "KNIME",
+    "categoria": ["analise"],
+    "emojis": "📊",
+    "descricao": "Plataforma visual (drag-and-drop) de código aberto para análise de dados e machine learning.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito).",
+      "studentPlan": "Gratuito.",
+      "review": "\"Não é um 'chat', é uma plataforma robusta de 'drag-and-drop'. Essencial para quem precisa de fluxos de análise de dados complexos e reprodutíveis sem programar.\" - Pesquisadora, EMBRAPA.",
+      "link": "https://www.knime.com/"
+    }
+  },
+  {
+    "id": "LanguageTool",
+    "nome": "LanguageTool",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Revisor gramatical e de estilo multilíngue, com forte suporte ao português.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$5/mês).",
+      "studentPlan": "Não.",
+      "review": "\"A melhor alternativa ao Grammarly, e com suporte muito superior para o Português (incluindo normas ABNT).\" - Mestranda, Letras.",
+      "link": "https://languagetool.org/pt/"
+    }
+  },
+  {
+    "id": "Litmaps",
+    "nome": "Litmaps",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Ferramenta de visualização de literatura que cria mapas de citação interativos.",
+    "detalhes": {
+      "pricing": "Freemium (Mapas gratuitos limitados).",
+      "studentPlan": "Planos gratuitos para estudantes/educadores.",
+      "review": "\"Similar ao Connected Papers, mas focado em 'seed articles'. Gosto da visualização e da capacidade de monitorar novos artigos.\" - Mestranda, UNICAMP.",
+      "link": "https://www.litmaps.com/"
+    }
+  },
+  {
+    "id": "Llama",
+    "nome": "Llama",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "Família de modelos abertos da Meta, usados como base para muitas outras ferramentas.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito para uso local).",
+      "studentPlan": "N/A (requer hardware).",
+      "review": "\"Base de muitos outros. Usar localmente (via Ollama) é ótimo para privacidade de dados de pesquisa.\" - Pesquisador, INPE.",
+      "link": "https://www.llama.com/"
+    }
+  },
+  {
+    "id": "Maritalk",
+    "nome": "Maritalk",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "Modelo de LLM brasileiro, otimizado para a língua portuguesa e o contexto cultural do Brasil.",
+    "detalhes": {
+      "pricing": "Gratuito (subsidiado).",
+      "studentPlan": "Gratuito.",
+      "review": "\"O melhor modelo para o contexto brasileiro. Entende nuances e jargões locais que os modelos estrangeiros ignoram.\" - Doutoranda, UFBA.",
+      "link": "https://chat.maritaca.ai/"
+    }
+  },
+  {
+    "id": "Midjourney",
+    "nome": "Midjourney",
+    "categoria": ["imagem"],
+    "emojis": "🖼️",
+    "descricao": "Plataforma de geração de imagens conhecida por seus resultados artísticos e estilizados.",
+    "detalhes": {
+      "pricing": "Pago (Planos a partir de ~$10/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Imbatível na qualidade artística. Uso para capas de relatórios e slides. A interface (via Discord) é péssima.\" - Doutorando, UFRJ.",
+      "link": "https://www.midjourney.com/home"
+    }
+  },
+  {
+    "id": "Mistral",
+    "nome": "Mistral",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "Modelo da startup francesa Mistral AI, conhecido por sua alta performance e eficiência.",
+    "detalhes": {
+      "pricing": "Freemium (Modelos 'Small' e 'Large' pagos).",
+      "studentPlan": "Não.",
+      "review": "\"Modelos muito rápidos e eficientes. A versão 'Large' compete diretamente com o GPT-4, muitas vezes com respostas mais diretas.\" - Pesquisador, IEA-USP.",
+      "link": "https://chat.mistral.ai/"
+    }
+  },
+  {
+    "id": "MyReader.ai",
+    "nome": "MyReader.ai",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Leitor de PDF que permite fazer perguntas e gerar resumos de documentos longos.",
+    "detalhes": {
+      "pricing": "Freemium.",
+      "studentPlan": "Não.",
+      "review": "\"Permite organizar artigos em pastas e 'conversar' com eles. Gosto da interface limpa.\" - Aluna, Graduação.",
+      "link": "https://www.myreader.ai/"
+    }
+  },
+  {
+    "id": "Notebook LM",
+    "nome": "Notebook LM",
+    "categoria": ["escrita", "busca", "llm"],
+    "emojis": "✍️ 🔎 🧠",
+    "descricao": "Assistente de pesquisa do Google que usa *apenas* as fontes que você carrega (PDFs, Docs).",
+    "detalhes": {
+      "pricing": "Gratuito (do Google).",
+      "studentPlan": "Gratuito.",
+      "review": "\"Minha ferramenta favorita. Crio um 'caderno' para cada projeto, subo meus PDFs e o Google Docs, e ele vira meu 'segundo cérebro' especialista naquele tema.\" - Pós-Doutorando, USP.",
+      "link": "https://notebooklm.google.com/"
+    }
+  },
+  {
+    "id": "Open Knowledge Maps",
+    "nome": "Open Knowledge Maps",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Cria mapas de conhecimento visuais (baseados em tópicos) a partir de termos de busca.",
+    "detalhes": {
+      "pricing": "Gratuito (Organização sem fins lucrativos).",
+      "studentPlan": "Gratuito.",
+      "review": "\"Cria 'mapas de bolhas' baseados em tópicos, não em citações. Excelente para ter uma visão geral de um campo de pesquisa amplo.\" - Bibliotecária, USP.",
+      "link": "https://openknowledgemaps.org/"
+    }
+  },
+  {
+    "id": "Paperpal",
+    "nome": "Paperpal",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Assistente de escrita focado em linguagem acadêmica, com integração ao Word.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$12/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Focado em linguagem acadêmica, melhor que o Grammarly para isso. O plugin de Word é excelente para revisar o manuscrito final.\" - Pesquisadora, Medicina.",
+      "link": "https://paperpal.com/"
+    }
+  },
+  {
+    "id": "Perplexity.ai",
+    "nome": "Perplexity.ai",
+    "categoria": ["busca", "llm"],
+    "emojis": "🔎 🧠",
+    "descricao": "Motor de busca conversacional que fornece respostas diretas com citações de fontes da web.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$20/mês).",
+      "studentPlan": "Desconto para estudantes ($10/mês).",
+      "review": "\"Meu 'Google' com IA. Responde perguntas com citações reais da web. A versão Pro (com Claude 3 e GPT-4) é a melhor ferramenta de pesquisa assistida do mercado.\" - Pós-Doutorando, IEA-USP.",
+      "link": "https://www.perplexity.ai/"
+    }
+  },
+  {
+    "id": "Quillbot",
+    "nome": "Quillbot",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Ferramenta popular para parafrasear e reescrever frases e parágrafos.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$8/mês).",
+      "studentPlan": "Não.",
+      "review": "\"O 'parafraseador' mais famoso. Útil para reescrever frases truncadas (especialmente do português para o inglês), mas deve ser usado com ética para evitar plágio.\" - Doutoranda, UFRJ.",
+      "link": "https://quillbot.com/"
+    }
+  },
+  {
+    "id": "Research Rabbit",
+    "nome": "Research Rabbit",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Ferramenta de descoberta de literatura que visualiza redes de artigos e autores.",
+    "detalhes": {
+      "pricing": "Gratuito (em beta perpétuo).",
+      "studentPlan": "Gratuito.",
+      "review": "\"O 'Spotify' dos artigos. Você cria 'coleções' e ele sugere trabalhos similares. A interface é a mais bonita e intuitiva de todas.\" - Doutoranda, UNESP.",
+      "link": "https://researchrabbitapp.com/"
+    }
+  },
+  {
+    "id": "Rows",
+    "nome": "Rows",
+    "categoria": ["analise"],
+    "emojis": "📊",
+    "descricao": "Planilha (spreadsheet) com integração de IA para análise e automação de dados.",
+    "detalhes": {
+      "pricing": "Freemium.",
+      "studentPlan": "Plano gratuito é suficiente para a maioria.",
+      "review": "\"É um 'Google Sheets' com IA. Consigo puxar dados de APIs e pedir para a IA analisar ou limpar colunas automaticamente.\" - Aluno, Administração.",
+      "link": "https://rows.com/"
+    }
+  },
+  {
+    "id": "Scholarcy",
+    "nome": "Scholarcy",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Sumarizador de artigos que extrai pontos-chave, métodos e resultados em \"flashcards\".",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$10/mês).",
+      "studentPlan": "Descontos disponíveis.",
+      "review": "\"Cria 'flashcards' de artigos. Ele extrai os pontos-chave, metodologia e resultados de um PDF em segundos. Ótimo para 'triar' artigos.\" - Mestranda, UNICAMP.",
+      "link": "https://www.scholarcy.com/"
+    }
+  },
+  {
+    "id": "Scispace",
+    "nome": "Scispace",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "(Antigo Typeset) Plataforma para ler e interagir com PDFs de artigos científicos via chat.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$12/mês).",
+      "studentPlan": "Desconto para estudantes.",
+      "review": "\"(Antigo Typeset). Permite ler e interagir com PDFs, com explicações de matemática e tabelas. A biblioteca é bem organizada.\" - Aluno, Engenharia.",
+      "link": "https://www.typeset.io/"
+    }
+  },
+  {
+    "id": "SciSummary",
+    "nome": "SciSummary",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Ferramenta que utiliza IA para gerar resumos de artigos científicos e papers.",
+    "detalhes": {
+      "pricing": "Pago (Preço por artigo).",
+      "studentPlan": "Não.",
+      "review": "\"Mando um artigo (ou link) e ele me envia um resumo detalhado por email. Útil para decidir rapidamente se vale a leitura completa.\" - Pesquisador, IEA-USP.",
+      "link": "https://scisummary.com/"
+    }
+  },
+  {
+    "id": "Scite.ai",
+    "nome": "Scite.ai",
+    "categoria": ["busca"],
+    "emojis": "🔎",
+    "descricao": "Verifica como um artigo foi citado, mostrando se recebeu apoio, menção ou contestação.",
+    "detalhes": {
+      "pricing": "Pago (~$12/mês).",
+      "studentPlan": "Descontos disponíveis.",
+      "review": "\"Não uso para 'buscar', uso para 'validar'. Ele me diz se um artigo foi 'apoiado', 'mencionado' ou 'contestado' por pesquisas futuras. Essencial.\" - Pesquisador Sênior, USP.",
+      "link": "https://scite.ai/"
+    }
+  },
+  {
+    "id": "Smoodin",
+    "nome": "Smoodin",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Assistente de escrita multifuncional, incluindo reescrita, verificação de plágio e tradução.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$10/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Um 'tudo-em-um': reescrita, verificação de plágio, tradução. Bom para quem quer uma solução única, mas as ferramentas dedicadas (como Writefull) são melhores.\" - Aluno, Graduação.",
+      "link": "https://smodin.io/"
+    }
+  },
+  {
+    "id": "Stable Diffusion",
+    "nome": "Stable Diffusion",
+    "categoria": ["imagem"],
+    "emojis": "🖼️",
+    "descricao": "Modelo de geração de imagem de código aberto, permitindo alta customização e uso local.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito para rodar localmente).",
+      "studentPlan": "Gratuito, mas exige GPU dedicada.",
+      "review": "\"A escolha para quem quer controle total. A quantidade de 'checkpoints' e LoRAs (modelos customizados) é infinita. Requer estudo.\" - Pesquisador, CTI.",
+      "link": "https://stability.ai/stable-assistant"
+    }
+  },
+  {
+    "id": "Star Coder",
+    "nome": "Star Coder",
+    "categoria": ["programacao"],
+    "emojis": "💻",
+    "descricao": "Modelo de código aberto do Hugging Face para geração de código.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito).",
+      "studentPlan": "N/A.",
+      "review": "\"Uma alternativa aberta ao Copilot. Ótimo para quem usa o Hugging Face e quer um modelo de código transparente.\" - Mestranda, UNICAMP.",
+      "link": "https://huggingface.co/blog/starcoder"
+    }
+  },
+  {
+    "id": "Storm",
+    "nome": "Storm",
+    "categoria": ["llm"],
+    "emojis": "🧠",
+    "descricao": "Modelo de Stanford focado em pesquisa, automatiza a geração de artigos longos com citações.",
+    "detalhes": {
+      "pricing": "Acadêmico (Gratuito, protótipo de pesquisa).",
+      "studentPlan": "N/A.",
+      "review": "\"Fascinante. Gera um artigo inteiro com outline e citações a partir de um tópico. Útil para ver o 'estado da arte', mas o resultado precisa de revisão pesada.\" - Pós-Doutorando, USP.",
+      "link": "https://storm.genie.stanford.edu/"
+    }
+  },
+  {
+    "id": "Trinka.ai",
+    "nome": "Trinka.ai",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Revisor gramatical e de linguagem focado especificamente em escrita técnica e acadêmica.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$7/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Revisor gramatical focado 100% em escrita técnica e acadêmica. Pega erros de 'estilo' que o Grammarly ignora.\" - Pesquisador Sênior, USP.",
+      "link": "https://www.trinka.ai/"
+    }
+  },
+  {
+    "id": "Writefull",
+    "nome": "Writefull",
+    "categoria": ["escrita"],
+    "emojis": "✍️",
+    "descricao": "Conjunto de ferramentas (parafraseador, paleta de sentenças) treinado em artigos científicos.",
+    "detalhes": {
+      "pricing": "Freemium (Instituições podem ter licenças CAPES).",
+      "studentPlan": "Verificar licença da universidade (CAPES).",
+      "review": "\"O melhor para escrita acadêmica. O 'Sentence Palette' (que sugere frases acadêmicas) e o 'Paraphraser' (treinado em artigos) são superiores aos concorrentes.\" - Doutoranda, USP.",
+      "link": "https://writefull.com/"
+    }
+  },
+  {
+    "id": "You.com",
+    "nome": "You.com",
+    "categoria": ["busca", "llm"],
+    "emojis": "🔎 🧠",
+    "descricao": "Motor de busca conversacional que integra respostas de IA com resultados da web.",
+    "detalhes": {
+      "pricing": "Freemium (Pro ~$10/mês).",
+      "studentPlan": "Não.",
+      "review": "\"Um motor de busca que mistura chat e resultados da web. Gosto dos 'apps' integrados, mas o Perplexity é mais focado em pesquisa.\" - Aluno, Graduação.",
+      "link": "https://you.com/"
+    }
+  },
+  {
+    "id": "Zotero",
+    "nome": "Zotero",
+    "categoria": ["escrita", "busca"],
+    "emojis": "✍️ 🔎",
+    "descricao": "Gerenciador de referências clássico, agora com plugins de IA para resumir e conectar artigos.",
+    "detalhes": {
+      "pricing": "Open Source (Gratuito).",
+      "studentPlan": "Gratuito.",
+      "review": "\"O gerenciador de referências. Com os novos plugins de IA, consigo selecionar 10 artigos na minha biblioteca e pedir um resumo ou uma tabela comparativa.\" - Pesquisadora, UFRJ.",
+      "link": "https://www.zotero.org/"
+    }
+  }
+]

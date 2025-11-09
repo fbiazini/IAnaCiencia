@@ -1,0 +1,163 @@
+/* Arquivo de estilo consolidado para o "Guia de IA para a Ciência".
+    Contém todos os estilos extraídos dos 7 arquivos HTML.
+*/
+
+/* ====================================================== */
+/* 1. Estilos Comuns (Presentes em todas as páginas)      */
+/* ====================================================== */
+
+/* Estilo para a aba de navegação ativa (M3 Style) */
+.nav-btn.active {
+    background-color: #0d9488; /* teal-600 */
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Tipografia (como o GDoc) */
+.prose-custom p {
+    margin-bottom: 1.25em;
+    line-height: 1.7;
+}
+.prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 {
+    margin-bottom: 0.8em;
+    margin-top: 1.5em;
+}
+.prose-custom ul, .prose-custom ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.25em;
+}
+.prose-custom strong {
+    font-weight: 600; /* GDoc usa negrito, não semi-bold */
+}
+.prose-custom i {
+    font-style: italic;
+}
+/* Estilo 'code' (de fluxo.html e apendice.html) */
+.prose-custom code {
+    font-family: monospace;
+    background-color: #f1f5f9; /* bg-slate-100 */
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    color: #d946ef; /* fuchsia-500 */
+}
+
+
+/* ====================================================== */
+/* 2. Estilos Específicos (por página)                    */
+/* ====================================================== */
+
+/* --- Estilos de principios.html e analise.html --- */
+/* Acordeão (M3 Style) */
+.accordion-header.open svg {
+    transform: rotate(180deg);
+}
+
+/* --- Estilos de fluxo.html --- */
+/* Botão de etapa do fluxo de trabalho (M3 Style) */
+.step-btn-infographic {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* gap-3 */
+    width: 100%;
+    text-align: left;
+    padding: 1.25rem; /* p-5 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #334155; /* text-slate-700 */
+    background-color: #f1f5f9; /* bg-slate-100 */
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.step-btn-infographic:hover {
+    background-color: #e2e8f0; /* bg-slate-200 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+.step-btn-infographic.active {
+    background-color: #f0fdfa; /* teal-50 */
+    border-color: #5eead4; /* teal-300 */
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.1);
+}
+.step-btn-infographic .step-icon {
+    font-size: 1.75rem; /* text-3xl */
+    line-height: 1;
+}
+.step-btn-infographic .step-title {
+    color: #334155; /* text-slate-700 */
+}
+.step-btn-infographic.active .step-title {
+    color: #0f766e; /* text-teal-700 */
+}
+
+/* --- Estilos de catalogo.html --- */
+/* Gráfico */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    max-height: 40vh;
+}
+
+/* Botão de filtro de ferramenta ativo (M3 Style) */
+.filter-btn.active {
+    background-color: #1e293b; /* slate-800 */
+    color: white;
+}
+
+/* Estilos do Modal (M3 Style) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 23, 42, 0.6); /* bg-slate-900/60 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.modal-content {
+    background-color: white;
+    padding: 2rem; /* p-8 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #f1f5f9; /* bg-slate-200 */
+    color: #475569; /* text-slate-600 */
+    border-radius: 9999px; /* rounded-full */
+    width: 2.5rem; /* w-10 */
+    height: 2.5rem; /* h-10 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+.modal-close-btn:hover {
+    background-color: #e2e8f0; /* bg-slate-300 */
+    transform: scale(1.1);
+}

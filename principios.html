@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípios Éticos - Guia IA na Pesquisa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+        Prompt Mestre (MPA) - Página 2: principios.html
+        - Conteúdo: Parte 1: Princípios Fundamentais (Fonte: GDoc)
+        - Design: Acordeão Interativo para seções 1.1, 1.2, 1.3, 1.4
+        - Componentes: Inclui a Navegação (ativa) e o Rodapé.
+    -->
+    
+    <!-- [MODIFICADO] Link para a folha de estilo consolidada -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- [REMOVIDO] Bloco <style>...</style> movido para style.css -->
+
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+        
+        <!-- ====================================================== -->
+        <!-- 1. Cabeçalho e Navegação (Componente Compartilhado)    -->
+        <!-- ====================================================== -->
+        <header class="mb-8">
+            <!-- Título principal -->
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700 mb-8 text-center">
+                Otimização da Pesquisa Científica com IA
+            </h1>
+            
+            <!-- Navegação Principal (MPA) -->
+            <nav class="flex flex-wrap justify-center gap-3">
+                <a href="guia.html" class="nav-btn">Visão Geral</a>
+                <a href="principios.html" class="nav-btn active">Parte 1: Princípios</a>
+                <a href="fluxo.html" class="nav-btn">Parte 2: Fluxo</a>
+                <a href="catalogo.html" class="nav-btn">Parte 3: Catálogo</a>
+                <a href="analise.html" class="nav-btn">Parte 4: Análise</a>
+                <a href="referencias.html" class="nav-btn">Referências</a>
+                <a href="apendice.html" class="nav-btn">Apêndice</a>
+            </nav>
+        </header>
+
+        <!-- ====================================================== -->
+        <!-- 2. Conteúdo Principal (Específico da Página)           -->
+        <!-- ====================================================== -->
+        <main id="page-ethics" class="space-y-6">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200">
+                <div class="prose-custom max-w-none">
+                    <h2 class="text-3xl font-semibold text-teal-700 mb-4 !mt-0">Parte 1: Princípios Fundamentais: Ética e Boas Práticas</h2>
+                    <p>A seguir, apresenta-se o framework consolidado para o uso de Inteligência Artificial na escrita de artigos científicos, com base nas diretrizes éticas e melhores práticas, alinhado às recomendações de Sampaio, Sabbatini e Limongi (2024).</p>
+                </div>
+
+                <!-- Wrapper do Acordeão -->
+                <div class="space-y-3 pt-6" id="accordion-ethics">
+                            
+                    <!-- Item 1.1: Considerações Éticas -->
+                    <div class="border border-slate-200 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="accordion-header flex justify-between items-center p-5 cursor-pointer bg-slate-50 hover:bg-slate-100 transition-colors duration-200">
+                            <h3 class="text-xl font-semibold text-teal-700">1.1. Considerações Éticas Fundamentais</h3>
+                            <svg class="w-6 h-6 text-teal-700 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="accordion-content hidden p-5 space-y-4 border-t border-slate-200 bg-white prose-custom max-w-none">
+                            <p>A utilização de IA na escrita científica deve ser pautada por princípios que preservem a integridade da pesquisa (Sampaio, Sabbatini, & Limongi, 2024). A falha em aderir a esses princípios é uma má prática e uma ameaça à confiança pública na ciência.</p>
+                            
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Transparência e Declaração de Uso:</h4>
+                                <p><strong>O Quê:</strong> É obrigatório declarar o uso de ferramentas de IAG na seção de "Métodos" ou "Agradecimentos" (Sampaio, Sabbatini, & Limongi, 2024, p. 19-20).</p>
+                                <p><strong>Por Quê:</strong> A transparência é a base da reprodutibilidade e da confiança científica. Ocultar o uso de uma ferramenta que afeta a formulação do texto ou a análise de dados quebra o contrato social da ciência.</p>
+                                <p><strong>Como:</strong> A declaração deve ser específica, detalhando a ferramenta (ex: ChatGPT, versão 4.0), a finalidade (ex: "utilizado para polimento da linguagem") e a extensão da contribuição (ex: "não foi utilizado para geração de hipóteses").</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Autoria e Responsabilidade:</h4>
+                                <p><strong>O Quê:</strong> A IA não pode ser listada como coautora. A autoria é reservada a humanos que assumem responsabilidade intelectual e legal pelo conteúdo (Sampaio, Sabbatini, & Limongi, 2024, p. 19).</p>
+                                <p><strong>Por Quê:</strong> A autoria implica agência moral e a capacidade de responder por todo o conteúdo do trabalho. Uma IA não pode ser responsabilizada.</p>
+                                <p><strong>Implicação:</strong> O(s) autor(es) humano(s) são inteiramente responsáveis por <strong>todo</strong> o conteúdo do manuscrito, incluindo a precisão de textos ou a veracidade de citações gerados pela IA.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Plágio e Originalidade:</h4>
+                                <p><strong>O Quê:</strong> Apresentar texto gerado por IA como se fosse pensamento original do autor humano constitui plágio (Sampaio, Sabbatini, & Limongi, 2024, p. 22).</p>
+                                <p><strong>O Risco (Alucinações):</strong> Modelos de IA podem "alucinar" — inventar fatos, dados e citações de artigos que não existem. A verificação de cada citação é mandatória.</p>
+                                <p><strong>Detecção:</strong> Ferramentas de detecção de plágio (ex: Turnitin) devem ser utilizadas (Sampaio, Sabbatini, & Limongi, 2024, p. 42).</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Privacidade de Dados e Confidencialidade:</h4>
+                                <p><strong>O Quê:</strong> Evitar inserir dados sensíveis, confidenciais, não publicados, ou informações de pacientes em ferramentas de IA públicas (Sampaio, Sabbatini, & Limongi, 2024, p. 18).</p>
+                                <p><strong>Exemplos de Risco:</strong> Isso inclui carregar transcrições de entrevistas, dados de saúde de pacientes, ou rascunhos de artigos em revisão por pares.</p>
+                                <p><strong>A Causa:</strong> Muitas ferramentas gratuitas usam os dados inseridos (prompts) para treinamento futuro. Prefira versões corporativas ou locais.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Viés Algorítmico:</h4>
+                                <p><strong>O Quê:</strong> Modelos de IA são treinados em dados da internet, podendo reproduzir ou ampliar vieses (sociais, de gênero, geográficos) (Sampaio, Sabbatini, & Limongi, 2024, p. 14).</p>
+                                <p><strong>Manifestação:</strong> Isso pode se manifestar ao privilegiar teorias e autores do Norte Global ou ignorar epistemologias do Sul Global.</p>
+                                <p><strong>Ação:</strong> Os pesquisadores devem avaliar criticamente os resultados gerados para garantir que não perpetuem uma visão de mundo hegemônica.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 1.2: Boas Práticas -->
+                    <div class="border border-slate-200 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="accordion-header flex justify-between items-center p-5 cursor-pointer bg-slate-50 hover:bg-slate-100 transition-colors duration-200">
+                            <h3 class="text-xl font-semibold text-teal-700">1.2. Melhores Práticas Operacionais</h3>
+                            <svg class="w-6 h-6 text-teal-700 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="accordion-content hidden p-5 space-y-4 border-t border-slate-200 bg-white prose-custom max-w-none">
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Planejamento e Escopo de Uso:</h4>
+                                <p>Definir objetivos claros <strong>antes</strong> de usar a IA. Decida onde a IA será usada (ex: "Elicit para revisão de literatura") e onde ela <strong>não</strong> será usada (ex: "A interpretação dos resultados qualitativos será 100% humana").</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Validação Humana Contínua (Human-in-the-Loop):</h4>
+                                <p>Esta é uma prática central. Tratar o texto gerado pela IA como um "rascunho zero". O papel do pesquisador muda de "escritor" para "curador crítico". O pesquisador deve revisar, editar e validar o conteúdo para infundir no texto sua própria voz e argumento intelectual (Sampaio, Sabbatini, & Limongi, 2024, p. 24).</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Uso de Ferramentas Complementares:</h4>
+                                <p>Evite usar uma única ferramenta (como o ChatGPT) para todas as tarefas. Use ferramentas especializadas para funções específicas (ex: Elicit ou Perplexity para busca, pois citam fontes; Writefull para estilo acadêmico).</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Verificação Cética de Fontes:</h4>
+                                <p>Confiança cega é um erro metodológico. Consulte as referências originais indicadas pela IA em bases indexadas (Scopus, SciELO) para confirmar sua existência, autoria e precisão do conteúdo (Sampaio, Sabbatini, & Limongi, 2024, p. 29).</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Letramento em IA (AI Literacy):</h4>
+                                <p>O uso ético pressupõe competência. Os pesquisadores devem se familiarizar com as limitações (o que a IA <strong>não</strong> pode fazer), funcionalidades e diretrizes éticas das ferramentas (Sampaio, Sabbatini, & Limongi, 2024, p. 26).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 1.3: Como Citar -->
+                    <div class="border border-slate-200 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="accordion-header flex justify-between items-center p-5 cursor-pointer bg-slate-50 hover:bg-slate-100 transition-colors duration-200">
+                            <h3 class="text-xl font-semibold text-teal-700">1.3. Como Citar Modelos de IA em Trabalhos Científicos</h3>
+                            <svg class="w-6 h-6 text-teal-700 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="accordion-content hidden p-5 space-y-4 border-t border-slate-200 bg-white prose-custom max-w-none">
+                            <p>Citar um modelo de IA é um desafio devido ao "model drift" (o modelo muda). A prática é fornecer informações para "congelar" a interação no tempo.</p>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">1. Na Metodologia ou Corpo do Texto (Exemplo):</h4>
+                                <p class="text-sm bg-slate-50 p-3 rounded-xl border border-slate-200">"Para a geração dos resumos iniciais, foi utilizado o modelo de linguagem grande Gemini... Os prompts foram submetidos e as respostas foram geradas em 19 de outubro de 2025, por meio da interface de chat do Google. Esta versão do modelo pertence à família Gemini (1.5 Pro)..."</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">2. Na Lista de Referências (Exemplo APA 7):</h4>
+                                <p class="text-sm bg-slate-50 p-3 rounded-xl border border-slate-200">Google. (2025). <i>Gemini (Modelo de linguagem grande 1.5 Pro)</i> [Software]. Acessado em 19 de outubro de 2025.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Pontos Chave:</h4>
+                                <ul class="list-disc list-inside">
+                                    <li><strong>Data de Acesso:</strong> A informação mais crucial.</li>
+                                    <li><strong>Identificador de Versão:</strong> Use o que for fornecido (ex: "1.5 Pro").</li>
+                                    <li><strong>Plataforma de Acesso:</strong> Mencione a interface (ex: chat do Google, API).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 1.4: Checklist -->
+                    <div class="border border-slate-200 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                        <div class="accordion-header flex justify-between items-center p-5 cursor-pointer bg-slate-50 hover:bg-slate-100 transition-colors duration-200">
+                            <h3 class="text-xl font-semibold text-teal-700">1.4. Checklist de Integridade do Pesquisador</h3>
+                            <svg class="w-6 h-6 text-teal-700 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                        <div class="accordion-content hidden p-5 space-y-4 border-t border-slate-200 bg-white prose-custom max-w-none">
+                            <p>Antes de submeter um artigo que utilizou IA, cumpra os seguintes requisitos:</p>
+                            <ul class="list-none space-y-3 text-slate-700">
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">1.</span>
+                                    <div><strong>Declarei o Uso?</strong> Minha seção de 'Métodos' ou 'Agradecimentos' cita as ferramentas de IA (nome, versão) e a finalidade do uso?</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">2.</span>
+                                    <div><strong>Eu Sou o Autor?</strong> A IA foi usada como assistente (parafrasear, resumir, buscar) e não como autora (criando argumentos, hipóteses ou conclusões)?</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">3.</span>
+                                    <div><strong>Verifiquei 100% das Citações?</strong> Eu confirmei que todas as referências sugeridas pela IA existem e dizem o que a IA alega que elas dizem?</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">4.</span>
+                                    <div><strong>Protegi Meus Dados?</strong> Eu evitei inserir dados sensíveis, inéditos, ou de participantes de pesquisa em plataformas de IA públicas?</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">5.</span>
+                                    <div><strong>Revisei o Plágio?</strong> Eu reescrevi substancialmente os rascunhos da IA e passei o texto final em um software de verificação de plágio (ex: Turnitin)?</div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="mr-3 text-teal-600 text-2xl">6.</span>
+                                    <div><strong>A Voz é Minha?</strong> O texto final reflete minha voz intelectual, meus argumentos e meu estilo, sem parecer um "texto genérico" de IA?</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- ====================================================== -->
+        <!-- 3. Rodapé (Componente Compartilhado)                   -->
+        <!-- ====================================================== -->
+        <footer class="text-center mt-12 py-4 border-t border-slate-200">
+            <p class="text-sm text-slate-500">
+                Última atualização: 08 de Novembro de 2025
+            </p>
+        </footer>
+    </div>
+
+    <!-- [MODIFICADO] Link para o script consolidado -->
+    <script src="script.js" defer></script>
+
+    <!-- [REMOVIDO] Bloco <script>...</script> movido para script.js -->
+
+</body>
+</html>

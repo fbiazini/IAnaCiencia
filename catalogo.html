@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Ferramentas - Guia IA na Pesquisa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- 
+        Prompt Mestre (MPA) - Página 4: catalogo.html
+        - Conteúdo: Parte 3: Catálogo de Ferramentas (Fonte: GDoc)
+        - Design: Gráfico (Chart.js), Filtros (com emojis), Grid de Cards (Alfabético), Modal (com dados de exemplo).
+        - Total de Ferramentas: 51 (conforme GDoc)
+        - Componentes: Inclui a Navegação (ativa) e o Rodapé.
+    -->
+    
+    <!-- [MODIFICADO] Link para a folha de estilo consolidada -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- [REMOVIDO] Bloco <style>...</style> movido para style.css -->
+
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+        
+        <!-- ====================================================== -->
+        <!-- 1. Cabeçalho e Navegação (Componente Compartilhado)    -->
+        <!-- ====================================================== -->
+        <header class="mb-8">
+            <!-- Título principal -->
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700 mb-8 text-center">
+                Otimização da Pesquisa Científica com IA
+            </h1>
+            
+            <!-- Navegação Principal (MPA) -->
+            <nav class="flex flex-wrap justify-center gap-3">
+                <a href="guia.html" class="nav-btn">Visão Geral</a>
+                <a href="principios.html" class="nav-btn">Parte 1: Princípios</a>
+                <a href="fluxo.html" class="nav-btn">Parte 2: Fluxo</a>
+                <a href="catalogo.html" class="nav-btn active">Parte 3: Catálogo</a>
+                <a href="analise.html" class="nav-btn">Parte 4: Análise</a>
+                <a href="referencias.html" class="nav-btn">Referências</a>
+                <a href="apendice.html" class="nav-btn">Apêndice</a>
+            </nav>
+        </header>
+
+        <!-- ====================================================== -->
+        <!-- 2. Conteúdo Principal (Específico da Página)           -->
+        <!-- ====================================================== -->
+        <main id="page-tools" class="space-y-6">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200">
+                <div class="prose-custom max-w-none">
+                    <h2 class="text-3xl font-semibold text-teal-700 mb-4 !mt-0">Parte 3: Catálogo de Ferramentas de IA para Pesquisadores</h2>
+                    <p>Esta lista é um extrato consolidado das ferramentas mencionadas no Apêndice 1 do livro "Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa" (Sampaio, Sabbatini, & Limongi, 2024, p. 55) e complementada com outras ferramentas.</p>
+                </div>
+
+                <!-- Gráfico e Filtros (Atualizado para 51 ferramentas) -->
+                <div class="flex flex-col lg:flex-row gap-6 my-8">
+                    <!-- Gráfico -->
+                    <div class="w-full lg:w-1/2">
+                        <h3 class="text-lg font-semibold text-slate-800 text-center mb-2">Distribuição de Ferramentas no Catálogo (N=51)</h3>
+                        <div class="chart-container">
+                            <canvas id="toolsChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Filtros (M3 Style) -->
+                    <div class="w-full lg:w-1/2">
+                        <h3 class="text-lg font-semibold text-slate-800 mb-4">Filtrar por Categoria:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="filter-btn active" data-filter="all">Todos (51)</button>
+                            <button class="filter-btn" data-filter="llm"><span class="mr-1.5">🧠</span>LLMs (9)</button>
+                            <button class="filter-btn" data-filter="busca"><span class="mr-1.5">🔎</span>Busca e Revisão (11)</button>
+                            <button class="filter-btn" data-filter="escrita"><span class="mr-1.5">✍️</span>Escrita e Edição (19)</button>
+                            <button class="filter-btn" data-filter="programacao"><span class="mr-1.5">💻</span>Programação (5)</button>
+                            <button class="filter-btn" data-filter="analise"><span class="mr-1.5">📊</span>Análise de Dados (4)</button>
+                            <button class="filter-btn" data-filter="imagem"><span class="mr-1.5">🖼️</span>Imagem (3)</button>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-4">
+                            Categorias baseadas no Prompt Mestre (v15). Algumas ferramentas (ex: Elicit) são multifuncionais, mas listadas na categoria primária.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Grid de Ferramentas (Ordem Alfabética, 51 Ferramentas) -->
+                <!-- O script.js agora é responsável por adicionar classes de estilo a 'tool-card' -->
+                
+                <!-- [MODIFICADO] O grid agora está vazio. O script.js irá preenchê-lo dinamicamente. -->
+                <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- O CONTEÚDO DOS 51 CARDS FOI REMOVIDO DAQUI -->
+
+                </div>
+            </div>
+        </main>
+
+        <!-- ====================================================== -->
+        <!-- 3. Rodapé (Componente Compartilhado)                   -->
+        <!-- ====================================================== -->
+        <footer class="text-center mt-12 py-4 border-t border-slate-200">
+            <p class="text-sm text-slate-500">
+                Última atualização: 08 de Novembro de 2025
+            </p>
+        </footer>
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- 4. Modal (Componente Compartilhado)                    -->
+    <!-- ====================================================== -->
+    <div id="tool-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close-btn">&times;</button>
+            <h3 id="modal-title" class="text-3xl font-semibold text-teal-700 mb-6">Nome da Ferramenta</h3>
+            
+            <div class="space-y-5">
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1">Estimativa de Investimento</h4>
+                    <p id="modal-pricing" class="text-slate-700">...</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1">Plano para Estudantes/Universidades</h4>
+                    <p id="modal-student" class="text-slate-700">...</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-1">Resenha (Exemplo de Uso)</h4>
+                    <blockquote id="modal-review" class="text-slate-700 italic border-l-4 border-slate-200 pl-4">"..."</blockquote>
+                </div>
+            </div>
+
+            <a id="modal-link" href="#" target="_blank" class="block w-full text-center bg-teal-600 text-white py-3 rounded-2xl text-base font-medium hover:bg-teal-700 transition-colors mt-8">
+                Acessar Ferramenta
+            </a>
+        </div>
+    </div>
+
+
+    <!-- [MODIFICADO] Link para o script consolidado -->
+    <script src="script.js" defer></script>
+    
+    <!-- [REMOVIDO] Bloco <script>...</script> movido para script.js -->
+
+</body>
+</html>

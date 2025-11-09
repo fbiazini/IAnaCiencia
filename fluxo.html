@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Trabalho - Guia IA na Pesquisa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+        Prompt Mestre (MPA) - Página 3: fluxo.html
+        - Conteúdo: Parte 2: Fluxo de Trabalho (Fonte: GDoc)
+        - Design: Infográfico "Escada Descendente" (Grid 2 col) interativo.
+        - Componentes: Inclui a Navegação (ativa) e o Rodapé.
+    -->
+    
+    <!-- [MODIFICADO] Link para a folha de estilo consolidada -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- [REMOVIDO] Bloco <style>...</style> movido para style.css -->
+
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+        
+        <!-- ====================================================== -->
+        <!-- 1. Cabeçalho e Navegação (Componente Compartilhado)    -->
+        <!-- ====================================================== -->
+        <header class="mb-8">
+            <!-- Título principal -->
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700 mb-8 text-center">
+                Otimização da Pesquisa Científica com IA
+            </h1>
+            
+            <!-- Navegação Principal (MPA) -->
+            <nav class="flex flex-wrap justify-center gap-3">
+                <a href="guia.html" class="nav-btn">Visão Geral</a>
+                <a href="principios.html" class="nav-btn">Parte 1: Princípios</a>
+                <a href="fluxo.html" class="nav-btn active">Parte 2: Fluxo</a>
+                <a href="catalogo.html" class="nav-btn">Parte 3: Catálogo</a>
+                <a href="analise.html" class="nav-btn">Parte 4: Análise</a>
+                <a href="referencias.html" class="nav-btn">Referências</a>
+                <a href="apendice.html" class="nav-btn">Apêndice</a>
+            </nav>
+        </header>
+
+        <!-- ====================================================== -->
+        <!-- 2. Conteúdo Principal (Específico da Página)           -->
+        <!-- ====================================================== -->
+        <main id="page-workflow" class="space-y-6">
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200">
+                <div class="prose-custom max-w-none">
+                    <h2 class="text-3xl font-semibold text-teal-700 mb-4 !mt-0">Parte 2: Fluxo de Trabalho Otimizado para Escrita Científica</h2>
+                    <p>Esta seção detalha um processo sequencial para a criação de um artigo científico, com sugestões de prompts e cuidados éticos em cada etapa, conforme os princípios práticos delineados por Sampaio, Sabbatini e Limongi (2024).</p>
+                </div>
+
+                <!-- [REVISADO] Infográfico de Fluxo de Trabalho (Escada) (M3 Style) -->
+                <div class="my-8">
+                    <!-- Container do Infográfico: Grid responsivo -->
+                    <div id="step-buttons" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        
+                        <!-- Etapa 1 -->
+                        <button class="step-btn-infographic active" data-step="step-1">
+                            <span class="step-icon">💡</span>
+                            <span class="step-title">1. Ideação e Delimitação</span>
+                        </button>
+
+                        <!-- Etapa 2 -->
+                        <button class="step-btn-infographic" data-step="step-2">
+                            <span class="step-icon">📚</span>
+                            <span class="step-title">2. Revisão de Literatura</span>
+                        </button>
+                        
+                        <!-- Etapa 3 -->
+                        <button class="step-btn-infographic" data-step="step-3">
+                            <span class="step-icon">🗂️</span>
+                            <span class="step-title">3. Organização das Fontes</span>
+                        </button>
+
+                        <!-- Etapa 4 -->
+                        <button class="step-btn-infographic" data-step="step-4">
+                            <span class="step-icon">✍️</span>
+                            <span class="step-title">4. Estrutura e Rascunho</span>
+                        </button>
+                        
+                        <!-- Etapa 5 -->
+                        <button class="step-btn-infographic" data-step="step-5">
+                            <span class="step-icon">🔬</span>
+                            <span class="step-title">5. Revisão e Polimento</span>
+                        </button>
+                        
+                        <!-- Etapa 6 -->
+                        <button class="step-btn-infographic" data-step="step-6">
+                            <span class="step-icon">🎯</span>
+                            <span class="step-title">6. Resumo e Título</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Conteúdo Detalhado (Oculto/Mostrado com JS) (M3 Style) -->
+                <div id="step-content-wrapper" class="mt-8 p-6 bg-slate-100 rounded-3xl border border-slate-200 min-h-[300px]">
+                    
+                    <!-- Etapa 1 -->
+                    <div id="step-1" class="step-content prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 1: Ideação, Delimitação do Tema e Pergunta de Pesquisa</h3>
+                        <p><strong>Objetivo:</strong> Sair de uma ideia vaga (ex: "IA e cidades") para uma pergunta de pesquisa clara, original e viável (ex: "Como ferramentas de IA otimizam o gerenciamento de resíduos sólidos em São Paulo?").</p>
+                        <p><strong>Ferramentas:</strong> Elicit, Perplexity, ChatGPT/Gemini.</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Brainstorming (Gemini/ChatGPT):</strong> Use um LLM para explorar subcampos.
+                                <ul><li><i>Prompt 1 (Exploratório):</i> <code>"Aja como um especialista em [Sua Área]. Estou interessado no tópico [Tópico Vago]. Quais são as 5 principais lacunas de pesquisa...?"</code></li></ul>
+                            </li>
+                            <li><strong>Análise de Lacunas (Elicit):</strong> Verifique o que já foi respondido. Use a função "List of research questions" sobre o tópico refinado.</li>
+                            <li><strong>Refinamento com Fontes (Perplexity):</strong> Use uma busca com fontes para validar a originalidade.
+                                <ul><li><i>Prompt:</i> <code>"Qual é o consenso atual sobre [Sua Pergunta de Pesquisa Específica]? Cite as 5 publicações mais recentes (2024-2025)..."</code></li></ul>
+                            </li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> Não use a IA para "criar" uma hipótese. A hipótese é a contribuição intelectual do pesquisador. Valide todas as "lacunas" e "fontes" sugeridas lendo os artigos originais (Sampaio, Sabbatini, & Limongi, 2024, p. 28).</p>
+                    </div>
+
+                    <!-- Etapa 2 -->
+                    <div id="step-2" class="step-content hidden prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 2: Revisão de Literatura Aprofundada e Sistemática</h3>
+                        <p><strong>Objetivo:</strong> Construir um mapa conceitual do campo, identificar os artigos fundamentais e entender a rede de citações.</p>
+                        <p><strong>Ferramentas:</strong> Elicit, ResearchRabbit, Scite.ai, Perplexity.</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Extração de Dados (Elicit):</strong> Use "Extract data from papers". Peça "Metodologia", "Tamanho da Amostra", "Principais Conclusões".</li>
+                            <li><strong>Visualização de Rede (ResearchRabbit / Connected Papers):</strong> Adicione 2-3 artigos-chave. Explore "Trabalhos Anteriores" (clássicos) e "Trabalhos Posteriores" (impacto).</li>
+                            <li><strong>Validação de Impacto (Scite.ai):</strong> Verifique o "Scite report" para ver se os artigos foram "apoiados" ou "contestados".</li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> Risco máximo de <strong>ALUCINAÇÃO DE CITAÇÕES</strong>. Verifique se os artigos sugeridos existem. Complemente com buscas em Scopus, SciELO, etc. (Sampaio, Sabbatini, & Limongi, 2024, p. 14, 29).</p>
+                    </div>
+
+                    <!-- Etapa 3 -->
+                    <div id="step-3" class="step-content hidden prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 3: Coleta, Organização e Compreensão das Fontes</h3>
+                        <p><strong>Objetivo:</strong> "Conversar" com seus artigos coletados para extrair insights, comparar argumentos e preparar sua síntese.</p>
+                        <p><strong>Ferramentas:</strong> NotebookLM, SciSpace, Zotero (com plugins de IA).</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Criação de Base de Conhecimento (NotebookLM):</strong> Carregue seus PDFs no NotebookLM. Ele se torna um especialista treinado <strong>apenas</strong> nas suas fontes.</li>
+                            <li><strong>Interrogação e Síntese (NotebookLM):</strong> Use-o para fazer perguntas através dos seus documentos.
+                                <ul><li><i>Prompt (Comparação):</i> <code>"Com base nas 15 fontes carregadas, compare as metodologias..."</code></li></ul>
+                                <ul><li><i>Prompt (Extração):</i> <code>"Extraia as definições de [conceito-chave] de todas as fontes..."</code></li></ul>
+                            </li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> Não carregue dados sensíveis ou não publicados em plataformas públicas. Um resumo de IA não substitui a leitura crítica (Sampaio, Sabbatini, & Limongi, 2024, p. 30, 35).</p>
+                    </div>
+
+                    <!-- Etapa 4 -->
+                    <div id="step-4" class="step-content hidden prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 4: Estruturação (Outline) e Redação do Rascunho</h3>
+                        <p><strong>Objetivo:</strong> Criar um esqueleto lógico (outline) e redigir o primeiro rascunho de forma assistida.</p>
+                        <p><strong>Ferramentas:</strong> ChatGPT/Gemini, Writefull.</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Gerar Outline (ChatGPT/Gemini):</strong> Peça uma estrutura padrão (ex: "Problema-Lacuna-Contribuição") para você editar.</li>
+                            <li><strong>Redação Assistida (Humano + IA):</strong> Escreva seus argumentos centrais em bullet points.
+                                <ul><li><i>Prompt (Expansão):</i> <code>"Converta os seguintes pontos em um parágrafo coeso...: [Seus 3-4 bullet points]."</code></li></ul>
+                            </li>
+                            <li><strong>Refinamento de Frases (Writefull):</strong> Use o "Sentence Palette" ou "Paraphraser" para refinar frases acadêmicas.</li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> PLÁGIO E AUTORIA são os riscos principais. O texto da IA é um "rascunho zero" que <strong>deve</strong> ser reescrito. A voz e o argumento intelectual são seus. Nunca peça à IA para "interpretar seus resultados" (Sampaio, Sabbatini, & Limongi, 2024, p. 31-32).</p>
+                    </div>
+
+                    <!-- Etapa 5 -->
+                    <div id="step-5" class="step-content hidden prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 5: Revisão, Polimento e Verificação</h3>
+                        <p><strong>Objetivo:</strong> Garantir que o rascunho esteja claro, conciso, gramaticalmente correto e original.</p>
+                        <p><strong>Ferramentas:</strong> Grammarly, Writefull (Revisão), Turnitin (Plágio), ChatGPT/Gemini.</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Clareza e Gramática (Grammarly/Writefull):</strong> Passe seu rascunho pelas ferramentas de revisão.</li>
+                            <li><strong>Tradução e Polimento (para não-nativos):</strong>
+                                <ul><li><i>Prompt:</i> <code>"Eu sou um falante nativo de português. Revise o seguinte texto em inglês para garantir que ele soe natural e acadêmico..."</code></li></ul>
+                            </li>
+                            <li><strong>Verificação de Plágio (Turnitin):</strong> Etapa não negociável.</li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> A responsabilidade final pela originalidade e precisão é 100% humana. Detectores de <strong>texto gerado por IA</strong> (diferente de plágio) ainda são falhos (Sampaio, Sabbatini, & Limongi, 2024, p. 42).</p>
+                    </div>
+
+                    <!-- Etapa 6 -->
+                    <div id="step-6" class="step-content hidden prose-custom max-w-none">
+                        <h3 class="text-2xl font-semibold text-slate-800 !mt-0">Etapa 6: Geração de Resumo (Abstract) e Título</h3>
+                        <p><strong>Objetivo:</strong> Criar um resumo e título impactantes <strong>após</strong> o artigo estar pronto. (Uma das tarefas de menor risco).</p>
+                        <p><strong>Ferramentas:</strong> ChatGPT/Gemini (com o artigo completo).</p>
+                        <p><strong>Processo:</strong></p>
+                        <ul class="list-disc">
+                            <li><strong>Gerar Resumo (Gemini):</strong> Cole seu artigo <strong>completo</strong>.
+                                <ul><li><i>Prompt:</i> <code>"Com base no artigo científico completo abaixo, gere um resumo estruturado (Objetivo, Métodos, Resultados, Conclusão) de 250 palavras."</code></li></ul>
+                            </li>
+                            <li><strong>Gerar Títulos (Gemini):</strong>
+                                <ul><li><i>Prompt:</i> <code>"Com base no resumo, sugira 5 títulos acadêmicos alternativos..."</code></li></ul>
+                            </li>
+                        </ul>
+                        <p class="text-red-700"><strong>Cuidados (Ética):</strong> Privacidade: Se os dados forem sensíveis, use uma conta paga/empresarial. Revise intensamente o resumo gerado para garantir que reflita <strong>exatamente</strong> o seu trabalho.</p>
+                    </div>
+                </div>
+
+                <!-- Conclusão do Framework -->
+                <div class="prose-custom max-w-none mt-8 pt-8 border-t border-slate-200">
+                    <h3 class="text-2xl font-semibold text-slate-800">Conclusão do Framework</h3>
+                    <p>A integração da IA na escrita científica representa uma oportunidade para aumentar a produtividade e a qualidade da pesquisa, automatizando tarefas. Contudo, seu uso exige responsabilidade ética, senso crítico e domínio técnico. A IA deve ser vista como uma ferramenta assistiva, um "copiloto" intelectual, não como um substituto para o intelecto e a agência do pesquisador (Sampaio, Sabbatini, & Limongi, 2024).</p>
+                    <p>A responsabilidade científica, a originalidade do pensamento e a verificação factual são pilares da pesquisa. Ao adotar um fluxo de trabalho estruturado, pautado pela ética da transparência e pela prática da verificação humana constante (human-in-the-loop), a comunidade científica pode aproveitar o poder da IA para acelerar a descoberta, mantendo a confiança pública no processo científico.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- ====================================================== -->
+        <!-- 3. Rodapé (Componente Compartilhado)                   -->
+        <!-- ====================================================== -->
+        <footer class="text-center mt-12 py-4 border-t border-slate-200">
+            <p class="text-sm text-slate-500">
+                Última atualização: 08 de Novembro de 2025
+            </p>
+        </footer>
+    </div>
+
+    <!-- [MODIFICADO] Link para o script consolidado -->
+    <script src="script.js" defer></script>
+    
+    <!-- [REMOVIDO] Bloco <script>...</script> movido para script.js -->
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título atualizado para refletir o nome do projeto -->
+    <title>Guia de IA para a Ciência (Open Source)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 
+        Página 1: guia.html (Visão Geral)
+        Esta é a página principal do "Guia de IA para a Ciência".
+        - Conteúdo: Introdução, Autor/Mantenedor, Links do Repositório, QRs, Logo.
+        - Refatorado para ser a página inicial de um projeto open source.
+    -->
+
+    <!-- Link para a folha de estilo consolidada -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
+
+    <!-- Container Principal -->
+    <div class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+        
+        <!-- ====================================================== -->
+        <!-- 1. Cabeçalho e Navegação (Componente Compartilhado)    -->
+        <!-- ====================================================== -->
+        <header class="mb-8">
+            <!-- Título principal -->
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-700 mb-8 text-center">
+                Guia de IA para a Ciência
+            </h1>
+            
+            <!-- Navegação Principal (MPA) -->
+            <nav class="flex flex-wrap justify-center gap-3">
+                <a href="guia.html" class="nav-btn active">Visão Geral</a>
+                <a href="principios.html" class="nav-btn">Parte 1: Princípios</a>
+                <a href="fluxo.html" class="nav-btn">Parte 2: Fluxo</a>
+                <a href="catalogo.html" class="nav-btn">Parte 3: Catálogo</a>
+                <a href="analise.html" class="nav-btn">Parte 4: Análise</a>
+                <a href="referencias.html" class="nav-btn">Referências</a>
+                <a href="apendice.html" class="nav-btn">Apêndice</a>
+            </nav>
+        </header>
+
+        <!-- ====================================================== -->
+        <!-- 2. Conteúdo Principal (Específico da Página)           -->
+        <!-- ====================================================== -->
+        <main id="page-home" class="space-y-6">
+            
+            <!-- Card Principal: Sobre o Guia e Autor -->
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200 hover:shadow-2xl transition-shadow duration-300">
+                
+                <!-- Layout de Mídia (QRs e Logo) -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 p-4 bg-slate-50 rounded-3xl border border-slate-200">
+                    
+                    <!-- QR Guia -->
+                    <a href="https://cidadesglobais.rederesiduo.com.br/IAnaCiencia/guia.html" target="_blank" class="text-center group flex-shrink-0">
+                        <img src="https://cidadesglobais.rederesiduo.com.br/IAnaCiencia/qrcode_cidadesglobais.rederesiduo.com.br.png" 
+                             alt="QR Code de Acesso ao Guia Interativo" 
+                             class="w-32 h-32 md:w-36 md:h-36 rounded-2xl border p-1 bg-white shadow-md transition-transform duration-300 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/144x144/ffffff/115e59?text=QR+Guia'">
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Acesso ao Guia Interativo</p>
+                    </a>
+                    
+                    <!-- Logo -->
+                    <img src="https://cidadesglobais.rederesiduo.com.br/IAnaCiencia/CGieaUSP.png" 
+                         alt="Logotipos USP Cidades Globais, IEA e USP" 
+                         class="w-full max-w-lg"
+                         onerror="this.src='https://placehold.co/400x100/ffffff/333333?text=Logo+CGieaUSP.png'">
+                    
+                    <!-- QR Grupo -->
+                    <a href="https://groups.google.com/g/ianaciencia" target="_blank" class="text-center group flex-shrink-0">
+                        <img src="https://cidadesglobais.rederesiduo.com.br/IAnaCiencia/qrcode_groups.google.com.png" 
+                             alt="QR Code do Grupo de Discussão" 
+                             class="w-32 h-32 md:w-36 md:h-36 rounded-2xl border p-1 bg-white shadow-md transition-transform duration-300 group-hover:scale-105"
+                             onerror="this.src='https://placehold.co/144x144/ffffff/115e59?text=QR+Grupo'">
+                        <p class="text-xs text-slate-500 mt-2 font-medium">Participe do Grupo</p>
+                    </a>
+                </div>
+
+                <!-- [MODIFICADO] Conteúdo de Texto (Substituído) -->
+                <div class="prose-custom max-w-none">
+                    <h2 class="text-3xl font-semibold text-teal-700 mb-4">Introdução</h2>
+
+                    <p>Este projeto de código aberto consolida e organiza informações sobre o uso da Inteligência Artificial na pesquisa científica. A ascensão da IA Generativa (IAG) representa uma transformação na produção de conhecimento desde a popularização da internet, oferecendo aceleração, mas também introduzindo riscos éticos e metodológicos.</p>
+                    
+                    <p>O conteúdo deste guia é fundamentado nas diretrizes práticas propostas por Sampaio, Sabbatini e Limongi (2024), que fornecem um guia para o uso ético, responsável e soberano da IAG por pesquisadores no contexto brasileiro. O objetivo deste projeto é propor um <i>framework</i> integrado que abrange desde os princípios éticos até a aplicação prática em um fluxo de trabalho otimizado.</p>
+                    
+                    <p>O guia está estruturado em várias seções navegáveis, cobrindo os princípios éticos, um processo prático para a escrita científica, um catálogo de ferramentas mantido pela comunidade e uma análise das implicações estratégicas e futuras desta tecnologia para o campo científico.</p>
+                    
+                    <!-- [MODIFICADO] Bloco de Autoria e Colaboração -->
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <p class="text-sm text-slate-700">
+                            <strong>Mantenedor (Autor Original):</strong> 
+                            <a href="https://sites.google.com/view/franbiazini-uspcidadesglobais/in%C3%ADcio" target="_blank" class="text-teal-600 font-medium hover:underline">
+                                Francisco Luiz Biazini Filho
+                            </a>, Pesquisador de Pós-Doutorado.<br>
+                            Centro de Síntese USP Cidades Globais | Instituto de Estudos Avançados da Universidade de São Paulo.
+                        </p>
+                        <p class="text-sm text-slate-700 mt-2">
+                            <strong>Contato:</strong> francisco.biazini@usp.br
+                        </p>
+                        <p class="text-xs italic text-slate-500 mt-4">
+                            <strong>Aviso (Projetos Open Source):</strong> As opiniões expressas neste guia são de responsabilidade do(s) seu(s) respectivo(s) autor(es) e colaboradores, não refletindo necessariamente as posições do Supervisor, do Centro de Síntese USP Cidades Globais, do IEA-USP ou da Universidade de São Paulo (USP).
+                        </p>
+                    </div>
+
+                    <!-- [NOVA SECÇÃO] Links do Repositório -->
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <h3 class="text-2xl font-semibold text-teal-700 !mt-0 mb-4">Sobre este Projeto Open Source</h3>
+                        <p>Este guia é mantido pela comunidade. Você pode ler a documentação do projeto, verificar as licenças ou contribuir diretamente através dos links abaixo:</p>
+                        <ul class="list-disc list-inside text-slate-700">
+                            <li><a href="README.md" class="text-teal-600 font-medium hover:underline">README.md</a>: Visão geral e como contribuir.</li>
+                            <li><a href="LICENSE-CODE.md" class="text-teal-600 font-medium hover:underline">Licença do Código (MIT)</a>: Para HTML, CSS, JS.</li>
+                            <li><a href="LICENSE-CONTENT.md" class="text-teal-600 font-medium hover:underline">Licença do Conteúdo (CC BY-SA 4.0)</a>: Para os textos e análises.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- ====================================================== -->
+        <!-- 3. Rodapé (Componente Compartilhado)                   -->
+        <!-- ====================================================== -->
+        <footer class="text-center mt-12 py-4 border-t border-slate-200">
+            <p class="text-sm text-slate-500">
+                Última atualização: 08 de Novembro de 2025
+            </p>
+        </footer>
+    </div>
+
+    <!-- Link para o script consolidado -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
