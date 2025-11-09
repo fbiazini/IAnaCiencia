@@ -14,7 +14,7 @@ Este guia é destinado a pesquisadores, estudantes de pós-graduação, alunos d
 
 O guia é um site composto por 7 páginas. Você pode acessá-lo publicamente no link abaixo ou navegar pelos arquivos diretamente:
 
-Link de Acesso: https://fbiazini.github.io/IAnaCiencia/guia.html
+Link de Acesso:  https://github.com/fbiazini/IAnaCiencia
 
 guia.html (Visão Geral): Introdução, autor e objetivos.
 
