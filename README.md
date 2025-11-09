@@ -12,7 +12,9 @@ Este guia é destinado a pesquisadores, estudantes de pós-graduação, alunos d
 
 🧭 Navegação (Como Usar o Guia)
 
-O guia é um site composto por 7 páginas. Você pode acessá-lo [INSERIR LINK DO GITHUB PAGES AQUI QUANDO ESTIVER ATIVO] ou navegar pelos arquivos diretamente:
+O guia é um site composto por 7 páginas. Você pode acessá-lo publicamente no link abaixo ou navegar pelos arquivos diretamente:
+
+Link de Acesso: https://fbiazini.github.io/IAnaCiencia/guia.html
 
 guia.html (Visão Geral): Introdução, autor e objetivos.
 
