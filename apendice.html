@@ -2,20 +2,17 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apêndice - Guia IA na Pesquisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Apêndice e Glossário - Guia IA na Pesquisa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 
-        Prompt Mestre (MPA) - Página 7: apendice.html
-        - Conteúdo: Apêndice A: Processo de Criação (Fonte: GDoc)
-        - Design: Página de texto simples.
-        - Componentes: Inclui a Navegação (ativa) e o Rodapé.
+        Página 7: apendice.html
+        - Conteúdo: Apêndice A (Processo de Criação) e Apêndice B (Glossário).
+        - Refatorado para incluir o glossário.
     -->
 
-    <!-- [MODIFICADO] Link para a folha de estilo consolidada -->
+    <!-- Link para a folha de estilo consolidada -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- [REMOVIDO] Bloco <style>...</style> movido para style.css -->
 
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
@@ -50,10 +47,12 @@
         <main id="page-appendix" class="space-y-6">
             <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200">
                 <div class="prose-custom max-w-none">
-                    <h2 class="text-3xl font-semibold text-teal-700 mb-4 !mt-0">Apêndice A: Processo de Criação deste Guia</h2>
+
+                    <!-- [SECÇÃO EXISTENTE] -->
+                    <h2 class="text-3xl font-semibold text-teal-700 mb-4 !mt-0">Apêndice A: Processo de Criação deste Relatório</h2>
                     
                     <h3 class="text-2xl font-semibold text-slate-800 !mt-4">Criação do Conteúdo</h3>
-                    <p>A base do guia foi um documento construído por meio de um processo de pesquisa meta-analítica utilizando múltiplos LLMs, seguido de síntese e curadoria humana.</p>
+                    <p>A base deste documento foi construída por meio de um processo de pesquisa meta-analítica utilizando múltiplos LLMs, seguido de síntese e curadoria humana.</p>
 
                     <h4 class="text-xl font-semibold text-slate-800">Pesquisa Inicial (Multi-LLM):</h4>
                     <p>As mesmas duas perguntas centrais foram submetidas a quatro dos principais LLMs generalistas disponíveis:</p>
@@ -94,14 +93,118 @@
                     <h4 class="text-xl font-semibold text-slate-800">Curadoria, Edição e Fundamentação:</h4>
                     <p>O autor humano (Francisco Luiz Biazini Filho) utilizou o material sintetizado pelo DeepSeek como base, realizando uma curadoria, edição e validação. O conteúdo foi refinado, estruturado e, o mais importante, fundamentado academicamente com base nas diretrizes do livro de Sampaio, Sabbatini e Limongi (2024), garantindo o rigor ético e metodológico.</p>
 
-                    <!-- [NOVA SEÇÃO ADICIONADA] -->
                     <h3 class="text-2xl font-semibold text-slate-800 !mt-6">Arquitetura Técnica e Refatoração (Open Source)</h3>
-                    <p>Após a curadoria humana do conteúdo do Relatório, foi utilizado o Google Gemini para codificar o protótipo inicial (um conjunto de 7 arquivos HTML estáticos com estilos e scripts embutidos), que depois foi submetido a um processo de refatoração técnica para otimizar o projeto para colaboração em código aberto (GitHub).</p>
+                    <p>Após a curadoria humana do conteúdo, o protótipo inicial (um conjunto de 7 arquivos HTML estáticos com estilos e scripts embutidos) foi submetido a um processo de refatoração técnica para otimizar o projeto para colaboração em código aberto (GitHub).</p>
                     <ul class="list-disc">
                         <li><strong>1. Separação de Tópicos (CSS/JS):</strong> Todos os estilos (CSS) e lógicas de script (JavaScript) de todas as 7 páginas foram extraídos e consolidados em dois arquivos centrais: <code>style.css</code> e <code>script.js</code>.</li>
                         <li><strong>2. Desacoplamento de Dados (JSON):</strong> O "Catálogo de Ferramentas" (Parte 3) foi tornado dinâmico. Os dados das 51 ferramentas, que estavam fixos no HTML e no JS, foram extraídos e movidos para um arquivo <code>ferramentas.json</code>. A página <code>catalogo.html</code> agora lê este JSON para renderizar o gráfico, os filtros e os cartões dinamicamente.</li>
                     </ul>
                     <p>Esta arquitetura permite que a comunidade sugira novas ferramentas simplesmente editando o arquivo <code>ferramentas.json</code>, sem a necessidade de alterar a lógica do site, facilitando a manutenção e a contribuição.</p>
+
+
+                    <!-- [NOVA SECÇÃO ADICIONADA] -->
+                    <h2 class="text-3xl font-semibold text-teal-700 !mt-12 mb-4">Apêndice B: Glossário de Termos e Conceitos</h2>
+                    
+                    <p>Esta lista compila os principais acrônimos e conceitos utilizados ao longo do "Guia de IA para a Ciência".</p>
+
+                    <!-- Lista de Definição (DL) para o glossário -->
+                    <dl class="space-y-5 !mt-6">
+                        <dt class="!font-semibold text-slate-800">Alucinação (de Citação)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `fluxo.html` e `principios.html`) O risco mais crítico das IAGs na pesquisa. Refere-se à tendência dos LLMs de inventar fatos, dados e, o mais perigoso, citações de artigos ou autores que não existem. O guia enfatiza a verificação de 100% das citações.</dd>
+
+                        <dt class="!font-semibold text-slate-800">API (Application Programming Interface)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html` e `apendice.html`) Interface de Programação de Aplicações. Um conjunto de regras que permite que diferentes softwares se comuniquem. No contexto do guia, é como ferramentas (ex: `Cursor`) podem usar modelos de IA (ex: `GPT-4`) como um serviço.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Autoria (em IA)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `principios.html`) Um pilar ético central do guia. A autoria é reservada a humanos que assumem responsabilidade intelectual e legal pelo conteúdo. O guia é explícito: uma IA não pode ser coautora, pois não pode ser responsabilizada.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Curadoria Humana</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `apendice.html` e `principios.html`) O processo de supervisão, edição e validação de conteúdo gerado por IA, realizado por um especialista humano. É o oposto de "confiança cega" e sinônimo de "Human-in-the-Loop". O próprio guia foi criado usando este processo.</dd>
+
+                        <dt class="!font-semibold text-slate-800">CS-USP-CG (Centro de Síntese USP Cidades Globais)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `guia.html` e `analise.html`) A afiliação do autor do guia, Francisco Luiz Biazini Filho. A página de Análise (Parte 4) usa as 5 perguntas-chave deste centro para estruturar sua análise de relevância.</dd>
+
+                        <dt class="!font-semibold text-slate-800">CSV (Comma-Separated Values)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html`) Um formato de arquivo de texto simples para armazenar dados em tabelas (planilhas). Mencionado no contexto de ferramentas de análise de dados como `Julius.ai`.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Dependência Epistêmica</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html`) Um conceito da sociologia da ciência. Refere-se ao risco de pesquisadores (especialmente do Sul Global) tornarem-se dependentes das plataformas e modelos de IA (do Norte Global) não apenas para ferramentas, mas para a própria formulação de ideias e validação do conhecimento.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Engenharia de Prompt</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `fluxo.html` e `apendice.html`) A habilidade de criar instruções (prompts) claras, detalhadas e contextuais para direcionar uma IA a produzir um resultado de alta qualidade. O guia exemplifica isso com os prompts usados para criar o próprio apêndice.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Framework</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `guia.html` e `fluxo.html`) Um termo usado para descrever o próprio guia. Refere-se a uma estrutura ou conjunto integrado de princípios, práticas e ferramentas que formam um "esqueleto" metodológico.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Freemium</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html`) Um modelo de negócio comum para ferramentas de IA, onde uma versão básica é oferecida gratuitamente (`Free`) e recursos avançados exigem uma assinatura paga (`Premium`).</dd>
+
+                        <dt class="!font-semibold text-slate-800">GPU (Graphics Processing Unit)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html`) Unidade de Processamento Gráfico. Um tipo de hardware especializado essencial para treinar e rodar modelos de linguagem grandes (LLMs) de forma eficiente. Mencionado no contexto de modelos locais como `Stable Diffusion`.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Homogeneização Epistêmica</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html`) Uma proposta de pesquisa futura. O risco de que o uso generalizado de LLMs (treinados nos mesmos dados) leve a uma padronização e perda de diversidade no estilo, estrutura e vocabulário da escrita científica global.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Human-in-the-Loop (Humano no Circuito)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `fluxo.html` e `principios.html`) A prática operacional mais importante do guia. Exige que o pesquisador humano permaneça ativamente envolvido no processo, validando, editando e tomando decisões críticas, em vez de aceitar passivamente os resultados da IA.</dd>
+
+                        <dt class="!font-semibold text-slate-800">IA (Inteligência Artificial)</dt>
+                        <dd class="!ml-4 text-slate-700">Termo genérico para sistemas de computador que realizam tarefas que normalmente exigiriam inteligência humana.</dd>
+
+                        <dt class="!font-semibold text-slate-800">IAG (Inteligência Artificial Generativa)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `guia.html` e `principios.html`) O foco principal do guia. Uma subcategoria da IA que pode *criar* (gerar) novos conteúdos, como texto, imagens, código ou dados, em vez de apenas analisá-los. Ex: `ChatGPT`, `Dall-e`.</dd>
+
+                        <dt class="!font-semibold text-slate-800">IEA (Instituto de Estudos Avançados)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `guia.html`) O instituto da USP ao qual o Centro de Síntese (CS-USP-CG) está associado.</dd>
+
+                        <dt class="!font-semibold text-slate-800">IMRAD</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html`) Acrônimo para a estrutura padrão de artigos científicos: **I**ntrodução, **M**étodos, **R**esultados **A** e **D**iscussão. Mencionado na proposta de pesquisa sobre homogeneização.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Letramento em IA (AI Literacy)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `principios.html`) Uma das "melhores práticas" definidas no guia. Refere-se à necessidade de os pesquisadores desenvolverem competência para entender as capacidades, limitações e riscos éticos das ferramentas de IA que utilizam.</dd>
+
+                        <dt class="!font-semibold text-slate-800">LLM (Large Language Model)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html` e `apendice.html`) Modelo de Linguagem Grande. O tipo de IAG focado em texto. São redes neurais massivas treinadas em vastas quantidades de texto da internet, capazes de entender e gerar linguagem humana. Ex: `GPT-4`, `Gemini`, `Claude`.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Meta-analítica</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `apendice.html`) O processo de pesquisa usado para criar o próprio guia. Envolveu a análise e síntese das *respostas* de outras IAs (uma análise sobre a análise).</dd>
+
+                        <dt class="!font-semibold text-slate-800">MPA (Multi-Page Application)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `instrucoes_finais.md`, usado por nós na refatoração) Aplicação de Múltiplas Páginas. A arquitetura de site usada pelo guia, onde cada seção é um arquivo `.html` separado, interligado por links de navegação.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Multi-LLM</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `apendice.html`) A prática de usar várias plataformas de LLM diferentes (ex: `ChatGPT`, `Gemini`, `Perplexity`) para a mesma tarefa, a fim de comparar resultados e obter uma visão mais completa.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Norte Global / Sul Global</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html` e `principios.html`) Termos usados na análise de vieses e da dependência epistêmica. Referem-se à divisão geopolítica e econômica que se reflete na produção de tecnologia de IA (concentrada no Norte Global) e seus impactos sobre o Sul Global.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Open Source (Código Aberto)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `catalogo.html` e `README.md`) Refere-se a software (ex: `Llama`, `KNIME`) ou projetos (como este guia) cujo código-fonte ou conteúdo é disponibilizado publicamente, permitindo que qualquer pessoa o use, modifique e distribua, geralmente sob licenças específicas (como MIT ou Creative Commons).</dd>
+
+                        <dt class="!font-semibold text-slate-800">Outline (Estrutura/Esqueleto)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `fluxo.html`) Etapa 4 do fluxo de trabalho. Refere-se à criação de um esqueleto lógico ou sumário detalhado do artigo antes de iniciar a redação do rascunho.</dd>
+
+                        <dt class="!font-semibold text-slate-800">PLN (Processamento de Linguagem Natural)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html` e `catalogo.html`) O campo da ciência da computação focado em permitir que computadores entendam e processem a linguagem humana. É a tecnologia fundamental por trás dos LLMs.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Prompt</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `fluxo.html` e `apendice.html`) A instrução em linguagem natural (texto) que um usuário fornece a uma IAG para solicitar uma tarefa. A qualidade do prompt (Engenharia de Prompt) afeta diretamente a qualidade da resposta.</dd>
+
+                        <dt class="!font-semibold text-slate-800">SWOT (Análise)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html`) Acrônimo para **S**trengths (Forças), **W**eaknesses (Fraquezas), **O**pportunities (Oportunidades) e **T**hreats (Ameaças). Uma ferramenta de análise estratégica usada na Parte 4 do guia.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Transdisciplinaridade</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `analise.html`) Um conceito-chave do CS-USP-CG. Refere-se à pesquisa que não apenas combina (inter) ou atravessa (multi) disciplinas, mas que também integra o conhecimento acadêmico com o conhecimento de atores não acadêmicos (ex: setor privado, governo) para resolver problemas complexos.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Transparência (em IA)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `principios.html`) Um pilar ético. Exige que os pesquisadores declarem abertamente o uso de ferramentas de IAG em seus trabalhos (na metodologia ou agradecimentos), especificando quais ferramentas e para quais fins.</dd>
+
+                        <dt class="!font-semibold text-slate-800">USP (Universidade de São Paulo)</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `guia.html`) A universidade à qual o autor e o IEA estão afiliados.</dd>
+
+                        <dt class="!font-semibold text-slate-800">Viés Algorítmico</dt>
+                        <dd class="!ml-4 text-slate-700">(Do `principios.html`) O risco de que os modelos de IA reproduzam ou ampliem preconceitos e vieses sociais (de gênero, raça, geografia) presentes nos dados da internet com os quais foram treinados.</dd>
+                    </dl>
 
                 </div>
             </div>
@@ -117,10 +220,8 @@
         </footer>
     </div>
 
-    <!-- [MODIFICADO] Link para o script consolidado -->
+    <!-- Link para o script consolidado -->
     <script src="script.js" defer></script>
-    
-    <!-- [REMOVIDO] Bloco <script>...</script> movido para script.js -->
 
 </body>
 </html>
