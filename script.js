@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
                     <h4 class="font-semibold text-lg text-teal-700 mb-2">${tool.nome}</h4>
                     <p class="text-sm text-slate-600 flex-grow mb-4">${tool.descricao}</p>
-                    <button classa="modal-trigger block w-full text-center bg-teal-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-teal-700 transition-colors mt-auto" data-tool-id="${tool.id}">Ver Detalhes</button>
+                    <button class="modal-trigger block w-full text-center bg-teal-600 text-white py-2 rounded-lg text-sm font-medium hover:bg-teal-700 transition-colors mt-auto" data-tool-id="${tool.id}">Ver Detalhes</button>
                 </div>
                 `;
                 toolsGridEl.innerHTML += cardHTML;
@@ -297,5 +297,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     // --- [FIM DA NOVA LÓGICA] ---
+
 
 }); // Fim do DOMContentLoaded
